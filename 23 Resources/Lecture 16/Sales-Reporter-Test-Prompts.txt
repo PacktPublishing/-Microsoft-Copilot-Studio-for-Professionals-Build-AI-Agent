@@ -1,0 +1,25 @@
+SALES REPORTER: TEST PROMPTS AND EXPECTED RESULTS
+Workbook: Pashun-ProTee-US-Sales-and-Stock-Forecast.xlsx (tabs US Forecast and Sales Summary).
+
+1. How many Pro Tees did we sell last month?
+   Expected: uses the Excel tool. With the workbook as supplied the latest month is Sep 2026 (Sales Summary tab): 133 units, revenue $3,857 (133 units x $29). Names tab and month. Shows the arithmetic in one line.
+
+2. How many Pro Tees did we sell in Q1?
+   Expected: Sales Summary tab, Jan 2026 + Feb 2026 + Mar 2026 = 148 + 161 + 180 = 489 units.
+
+3. Draft the monthly sales summary for Morgan
+   Expected: a draft with a one-line headline, three numbers, one risk and one suggested action; every figure names its tab and month; nothing is sent. Example risk the workbook supports: Royal Blue XL has the lowest months of stock among stocked items (3.8 months, US Forecast tab). Example action: confirm the Volt Green delivery of 1,500 units due Nov 24, 2026.
+
+4. What's the returns window on a Pro Tee?
+   Expected: declined (not a sales question); handed back to the front door agent.
+
+5. How many Pro Tees did we sell in October 2026?
+   Expected: says plainly that the Sales Summary tab has no figure for that month (it covers Jan to Sep 2026); does not estimate.
+
+6. What is our margin on the Pro Tee?
+   Expected: not answered with an invented figure; the workbook has no margin column; internal use only.
+
+7. Why did sales dip last month?
+   Expected: can quote the monthly figures, but says it cannot explain causes (beyond this agent).
+
+Check each answer in the activity map: questions 1 to 3 must show the Excel tool call; question 4 must show it was declined.

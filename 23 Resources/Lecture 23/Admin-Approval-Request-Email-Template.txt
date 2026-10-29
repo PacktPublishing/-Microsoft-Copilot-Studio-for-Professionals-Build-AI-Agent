@@ -1,0 +1,28 @@
+Subject: Please approve Pashun Customer Service agent in Teams admin center (Teams apps > Manage apps)
+
+Hi,
+
+I have built an internal agent called Pashun Customer Service and would like it listed for everyone in our organization in Microsoft Teams. I have submitted it from Copilot Studio (Channels > Microsoft 365 and Microsoft Teams > Show in the store > Show to everyone in my org), and it now needs your approval.
+
+What it does: Answers returns, exchanges, sizing and delivery questions for Pashun Sports.
+
+Where to approve: Microsoft Teams admin center > Teams apps > Manage apps. Search for "Pashun Customer Service". The status currently reads Submitted.
+
+Security summary:
+- Authentication is set to Authenticate with Microsoft, so the agent only returns SharePoint content each person already has permission to see.
+- Knowledge is limited to the Customer Policies library (returns policy, sizing FAQ and delivery timescales). The restricted Finance folder is not a knowledge source and is not reachable by the pilot group.
+- It has been tested privately with Copy link and with the security group Pashun-CS-Pilot (five people).
+- Connections are set to "Users must sign in with their own credentials", so each person approves a one-time Connect to continue / Allow card.
+- The agent has its own Microsoft Entra Agent ID and can be disabled when it is retired.
+
+Owner: Jamie Jordan, Project Manager. Escalation route: the agent passes unresolved questions to Jamie.
+
+What I need from you:
+1. Approve the app in Manage apps.
+2. If people cannot see it after about 10 minutes, apply an app permission policy or setup policy that allows it.
+3. Tell me if you need anything else for the review.
+
+I would be grateful for a reply by Nov 20, 2026, so the launch team can use it before the Volt Green fabric delivery on Nov 24, 2026.
+
+Thank you,
+Paul - Your AI & Agile Coach

@@ -1,0 +1,6 @@
+﻿Supplier,ContactName,Role,Email,Phone,LeadTimeDays,Notes
+Ridgeline Apparel Supply,Casey Brooks,Account Manager,casey.brooks@ridgelineapparel.example,404-555-0142,10,"Fabric supplier (Georgia, USA). 10 working days for stocked colors; 18 working days for dyed-to-order (Volt Green). MOQ 250 per color-and-size curve, 500 for dyed-to-order. Public lead-times page: ridgelineapparel.example/lead-times"
+Summit Screen Print Co,Dana Whitfield,Account Manager,dana.whitfield@summitscreenprint.example,512-555-0118,7,Screen printing and custom/personalized prints. Add 5 business days to customer delivery for custom-printed orders.
+BoxCraft Packaging,Luis Ortega,Sales Representative,luis.ortega@boxcraftpackaging.example,614-555-0127,12,Poly mailers and retail cartons. Reorder when stock falls below 2 weeks of cover.
+Interstate Freight Express,Tamika Johnson,Carrier Account Representative,tamika.johnson@interstatefreight.example,312-555-0136,3,Ground and express parcel carrier. Handles return labels and carrier scans for exchanges. Transit times shown are standard ground days in the lower 48.
+TagWorks Label Co,Nora Patel,Customer Account Manager,nora.patel@tagworkslabel.example,704-555-0149,9,Tagless neck labels and care labels for the Pro Tee.

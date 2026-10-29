@@ -1,0 +1,13 @@
+Slot Filling Test Utterances - Lecture 9
+Type one line at a time, new test session each time.
+
+I'd like to exchange my Pro Tee from order PS-1042.
+I need to swap my Pro Tee from order PS-1042 for a large
+I need to return my Pro Tee, order PS-1042.
+this is way too tight, any chance I can get a bigger one?
+Wrong size, need to exchange
+PS1042
+ps 1042
+PS-1042
+I want to return my Pro Tee
+actually, it also arrived damaged

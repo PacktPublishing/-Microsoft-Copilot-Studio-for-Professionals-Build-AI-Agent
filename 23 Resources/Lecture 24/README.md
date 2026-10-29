@@ -1,0 +1,8 @@
+# Lecture 24: How to Govern Agents, Control Costs and Apply Responsible AI Principles
+
+**In this folder:** Environment-Strategy-and-DLP-Planning-Workbook.xlsx, Governed-Agent-Instruction-Block.txt, Pre-Publish-Governance-Checklist.docx, Agent-Governance-Record-Template.docx, PolicySiteUrl-Environment-Variable-Note.docx, Copilot-Credit-Cost-Estimator.xlsx, Copilot-Credits-Forecasting-Worksheet.docx, Agent-Cost-Governance-Checklist.docx, Responsible-AI-Review-Checklist.docx, Four-Disclosures-Greeting-Template.docx, Adversarial-Test-Prompt-Set.docx, Adversarial-Test-Prompt-Set.txt
+
+Follow the lecture in order. Part 1: fill in the Environment Strategy and DLP Planning Workbook (three-tier template, connector classification matrix, agent ownership register) and use the PolicySiteUrl note when you promote the solution. Part 2: build your forecast in the Copilot Credit Cost Estimator (the formulas recalculate when you change the yellow cells), write it up with the Copilot Credits Forecasting Worksheet, and use the Agent Cost Governance Checklist. Part 3: paste the rules from Governed-Agent-Instruction-Block.txt, write your greeting with the Four Disclosures Greeting Template, run the Adversarial Test Prompt Set, and record the result in the Responsible AI Review Checklist and the Agent Governance Record. Use the Pre-Publish Governance Checklist as your final go / no-go. Cross-check cost assumptions against the Agent Usage Estimator from the lecture on licensing and Copilot Credits.
+
+## To follow along exactly
+Have the Customer Service Agent open in Copilot Studio and access to the Power Platform admin center (or an admin who can screen-share it).

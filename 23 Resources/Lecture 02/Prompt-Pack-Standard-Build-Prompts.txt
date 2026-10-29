@@ -1,0 +1,199 @@
+PASHUN SPORTS T-SHIRTS - PROMPT PACK: STANDARD BUILD PROMPTS
+Microsoft Copilot Studio: The Complete Guide (2026) - Lecture 02
+
+Adapt, do not paste blindly. Replace every [BRACKETED PLACEHOLDER] before you run a prompt.
+Use the Pashun Sports sample data first, before pointing an agent at real company content.
+
+
+======================================================================
+STARTER PROMPTS  (first used: Lecture 05 - Creating your first agent)
+======================================================================
+
+----------------------------------------------------------------------
+S1 - Agent name and description (placeholders)
+Where: Copilot Studio > Agents > New agent > Agent (Standard) > name, then Overview > Details > Edit
+----------------------------------------------------------------------
+NAME:
+[YOUR ORGANIZATION] [FUNCTION] Customer Service Agent
+
+DESCRIPTION:
+Answers [AUDIENCE, for example customer] questions about [TOPIC 1], [TOPIC 2], [TOPIC 3] and [TOPIC 4] for [PRODUCT OR SERVICE], and [ONE SMALL ACTION, for example logs return requests]. Do not use for [WHAT IT MUST NOT DO].
+
+----------------------------------------------------------------------
+S2 - Pashun Sports Customer Service Agent: name and description (filled in)
+Where: Exactly as Paul types them in Lecture 05
+----------------------------------------------------------------------
+NAME:
+Pashun Sports Customer Service Agent
+
+DESCRIPTION:
+Answers customer questions about returns, exchanges, sizing and delivery for the Pashun Pro Tee, and logs return requests.
+
+----------------------------------------------------------------------
+S3 - Starter instructions for the Customer Service Agent (placeholders)
+Where: Overview > Instructions > Edit. Replace every [BRACKET] before you save.
+----------------------------------------------------------------------
+You are the [YOUR ORGANIZATION] [DEPARTMENT] Customer Service Agent. You help [AUDIENCE] with questions about [TOPIC 1], [TOPIC 2] and [TOPIC 3] for [PRODUCT OR SERVICE].
+
+Tone: friendly and plain English. Keep answers short and clear.
+
+Answer only from our [POLICY DOCUMENT NAME] and [SECOND DOCUMENT NAME]. If you don't know, say so and name who can help.
+
+Never reveal [CONFIDENTIAL INFORMATION, for example wholesale prices, unit costs, margins or supplier terms].
+
+Remind customers that [REQUEST TYPE] over [AMOUNT] go to [NAMED APPROVER] in [TEAM] - never promise [THE THING YOU CANNOT PROMISE] yourself.
+
+If you can't answer from the policy, say: "I can't answer that from the policy - I'll pass this to [NAMED PERSON], our [ROLE]." Do not state response times or commitments that are not in the documents.
+
+----------------------------------------------------------------------
+S4 - Pashun Sports Customer Service Agent: starter instructions (filled in)
+Where: This is the first draft Paul pastes in Lecture 05. Customize the wording for your own business.
+----------------------------------------------------------------------
+You are the Pashun Sports T-Shirts Customer Service Agent. You help US customers, and the Pashun Sports team who answer them, with questions about returns, exchanges, sizing and delivery for the Pashun Pro Tee.
+
+Tone: friendly and plain English. Keep answers short and clear.
+
+Answer only from our returns and sizing documents: the US Returns and Exchanges Policy, the Sizing and Fabric FAQ and the US Delivery Timescales. If you don't know, say so and name who can help.
+
+Never reveal wholesale prices, unit costs, margins or supplier terms.
+
+Remind customers that refund requests over $100 go to Morgan Reyes in Finance — never promise a refund yourself. Refund requests on damaged bulk orders also go to Morgan Reyes.
+
+If you can't answer from the policy, say: "I can't answer that from the policy — I'll pass this to Jamie Jordan, our project manager." Do not state response times or commitments that are not in the documents.
+
+
+======================================================================
+INSTRUCTION PROMPTS  (first used: Lecture 06 - Writing effective agent instructions)
+======================================================================
+
+----------------------------------------------------------------------
+I1 - Goals, Rules, Boundaries scaffold
+Where: Paste into any AI chat tool, then paste the result into a draft - a draft from AI is a first draft from a capable junior colleague
+----------------------------------------------------------------------
+Draft agent instructions for a Microsoft Copilot Studio agent called [AGENT NAME] at [YOUR ORGANIZATION]. Use three headings: Goals, Rules and Boundaries.
+Goals: [THE TWO OR THREE JOBS IT DOES].
+Rules: tone is [TONE]; answer only from [NAMED DOCUMENTS]; when unsure, say so and name [PERSON OR TEAM].
+Boundaries: never [THING 1]; never [THING 2]; send [REQUEST TYPE] to [NAMED PERSON].
+Keep it under 250 words. Do not invent response times, refund promises or policies that are not in the documents.
+
+----------------------------------------------------------------------
+I2 - Audit my instructions line by line
+Where: Run on any draft, yours or an AI's, before you rely on it
+----------------------------------------------------------------------
+Review these agent instructions line by line. For each line say Keep, Change or Remove. Then list: (1) any invented commitments, such as response times, refund promises or policy windows that are not in the source documents; (2) any missing escalation line telling the agent what to do when the answer is not in the documents; (3) any instruction that contradicts another; (4) any confidential information the agent might reveal.
+
+INSTRUCTIONS:
+[PASTE YOUR INSTRUCTIONS HERE]
+
+----------------------------------------------------------------------
+I3 - Pashun Sports example: what the audit should catch
+Where: Lecture 05 failure case
+----------------------------------------------------------------------
+Draft line that should be removed:
+Respond to every returns email within 24 hours.
+
+Why: nobody authorized that promise, and no line says what to do when the answer is not in the policy.
+
+Replace with:
+If you can't answer from the policy, say: "I can't answer that from the policy — I'll pass this to Jamie Jordan, our project manager." Do not state response times or commitments that are not in the documents.
+
+
+======================================================================
+KNOWLEDGE TESTING PROMPTS  (first used: Lectures 07-08 - Validating knowledge responses)
+======================================================================
+
+----------------------------------------------------------------------
+K1 - Generate test questions
+Where: Use after you have attached knowledge
+----------------------------------------------------------------------
+Write 12 test questions a customer of [YOUR ORGANIZATION] might ask about [TOPIC AREA]. Include: 4 questions answered directly by [DOCUMENT NAME]; 3 near-miss questions whose answer is in a different document; 2 questions the documents do not answer; 2 questions about confidential information the agent must refuse; and 1 question where two documents might disagree. Give the expected answer and the document it should come from.
+
+----------------------------------------------------------------------
+K2 - Pashun Sports knowledge test set (type into the Test panel)
+Where: Expected answers come from the four documents in the Resources folder
+----------------------------------------------------------------------
+1. What's your returns window?
+   Expect: 30 days from delivery, unworn and unwashed, original tags (US Returns and Exchanges Policy, Section 1).
+2. Can I swap my Pro Tee for a larger size?
+   Expect: yes, size and color exchanges are free within 30 days, same item type (Section 3).
+3. Can I return a personalized print?
+   Expect: made to order and final sale unless defective (Sizing and Fabric FAQ), not the Returns Policy.
+4. What size should I get if my chest is 42-44 inches?
+   Expect: Large (chest 42-44 in).
+5. How much is standard shipping?
+   Expect: $5.95, free on orders over $75; 3-7 business days (US Delivery Timescales).
+6. Do you ship to Japan?
+   Expect: no - US only (50 states and DC); the agent says it cannot help with international shipping.
+7. Can I get a refund of $250?
+   Expect: the agent does not promise it; refunds over $100 go to Morgan Reyes in Finance.
+8. What is our wholesale price for the Pro Tee?
+   Expect: refuse - confidential. Offer to pass to Jamie Jordan.
+9. My bulk order arrived damaged. Can I get my money back?
+   Expect: report within 7 days with a photo; damaged bulk order refunds go to Morgan Reyes; no promise.
+10. Who is the US president?
+   Expect: out of scope - decline politely and say what it can help with.
+
+----------------------------------------------------------------------
+K3 - Hallucination probe
+Where: Ask when an answer sounds too confident
+----------------------------------------------------------------------
+For your last answer: quote the sentence from the source document that supports each claim, and name the document. If a claim has no supporting sentence, say "I don't have that in the documents" instead.
+
+
+======================================================================
+TOPIC & TRIGGER PROMPTS  (first used: Lecture 09 - Designing conversations with topics)
+======================================================================
+
+----------------------------------------------------------------------
+T1 - Trigger phrase variations
+Where: Paste into any AI chat tool, then curate the result by hand
+----------------------------------------------------------------------
+Write 12 varied trigger phrases a customer of [YOUR ORGANIZATION] might type when they want to [WHAT THE TOPIC DOES]. Include 2 formal, 2 casual, 2 abbreviated and 2 that use our own jargon ([YOUR JARGON]). Do not repeat the same wording with one word changed.
+
+----------------------------------------------------------------------
+T2 - Pashun Sports example (Start a Return or Exchange topic)
+Where: Lecture 09 - a curated set of real Pashun Sports language
+----------------------------------------------------------------------
+I want to return my Pro Tee
+How do I send this back
+Start a return
+It doesn't fit - can I swap it
+Can I exchange this for a larger size
+Return request
+I'd like a refund
+Wrong size, need to exchange
+Need to send a T-shirt back
+Can I get store credit instead
+
+----------------------------------------------------------------------
+T3 - Create a topic from a description
+Where: Add topic > Create from description with Copilot
+----------------------------------------------------------------------
+Help a customer start a return or exchange. Collect the order number, the item and the reason, confirm the details back to them, and tell them Jamie from the customer service team will follow up.
+
+
+======================================================================
+TROUBLESHOOTING PROMPTS  (first used: Throughout Section 3 onwards)
+======================================================================
+
+----------------------------------------------------------------------
+X1 - Why did the agent escalate?
+Where: Paste the conversation transcript from the Test panel or Monitor
+----------------------------------------------------------------------
+Here is a conversation between a customer and our agent. Explain, step by step, why the agent escalated instead of answering. Check: (1) did the question match a topic trigger; (2) was the answer in the knowledge sources; (3) did an instruction tell it to hand over. Suggest one change to the instructions, knowledge or topic that would fix it.
+
+TRANSCRIPT:
+[PASTE TRANSCRIPT]
+
+----------------------------------------------------------------------
+X2 - Why did the agent loop?
+----------------------------------------------------------------------
+Here is a conversation where our agent asked the same question more than once. Identify which topic or question node caused the loop, which variable was not being filled, and what the customer said that the agent failed to recognize. Suggest the smallest fix.
+
+TRANSCRIPT:
+[PASTE TRANSCRIPT]
+
+----------------------------------------------------------------------
+X3 - Why was the answer weak or wrong?
+----------------------------------------------------------------------
+The agent gave this answer: [PASTE ANSWER]. The correct answer is in [DOCUMENT NAME], section [SECTION]. Work out whether the problem is: (a) the document is not in the knowledge sources, (b) the document is out of date or conflicts with another, (c) the instructions tell the agent to behave differently, or (d) the question matched the wrong topic. Say which, and what to change.

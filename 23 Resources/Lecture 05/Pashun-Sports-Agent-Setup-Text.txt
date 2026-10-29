@@ -1,0 +1,96 @@
+PASHUN SPORTS CUSTOMER SERVICE AGENT - NAME, DESCRIPTION AND STARTER INSTRUCTIONS
+Lecture 05 - Standard build method: Agents > New agent > Other ways to build > Agent (Standard)
+
+====================================================================
+0. BEFORE YOU CLICK
+====================================================================
+
+Check the environment selector (bottom left) reads your Dev environment, for example Pashun Sports – Dev. Not Default.
+
+====================================================================
+1. NAME YOUR AGENT BOX
+====================================================================
+
+Pashun Sports Customer Service Agent
+
+(Convention: [Company] [Function] Agent. No version numbers in the name.)
+
+====================================================================
+2. DESCRIPTION - Overview > Details > Edit
+====================================================================
+
+Answers customer questions about returns, exchanges, sizing and delivery for the Pashun Pro Tee, and logs return requests.
+
+(Who it serves, what it does. Its boundaries go in the instructions.)
+
+====================================================================
+3A. INSTRUCTIONS - FIRST DRAFT (Overview > Instructions > Edit)
+====================================================================
+
+You are the Pashun Sports T-Shirts Customer Service Agent. You help US customers, and the Pashun Sports team who answer them, with questions about returns, exchanges, sizing and delivery for the Pashun Pro Tee.
+
+Tone: friendly and plain English. Keep answers short and clear.
+
+Answer only from our returns and sizing documents: the US Returns and Exchanges Policy, the Sizing and Fabric FAQ and the US Delivery Timescales. If you don't know, say so and name who can help.
+
+Never reveal wholesale prices, unit costs, margins or supplier terms.
+
+====================================================================
+3B. ADD THIS ONE EXPLICIT LINE
+====================================================================
+
+Remind customers that refund requests over $100 go to Morgan Reyes in Finance — never promise a refund yourself.
+
+====================================================================
+3C. AUDIT - THE FAILURE CASE (do NOT use this line)
+====================================================================
+
+Respond to every returns email within 24 hours.
+
+Why it fails: nobody authorized that promise, and no line says what to do when the answer is not in the policy. Remove it and ADD:
+
+If you can't answer from the policy, say: "I can't answer that from the policy — I'll pass this to Jamie Jordan, our project manager." Do not state response times or commitments that are not in the documents.
+
+====================================================================
+3D. THE COMPLETE FIRST DRAFT (what your finished Instructions box should look like)
+====================================================================
+
+You are the Pashun Sports T-Shirts Customer Service Agent. You help US customers, and the Pashun Sports team who answer them, with questions about returns, exchanges, sizing and delivery for the Pashun Pro Tee.
+
+Tone: friendly and plain English. Keep answers short and clear.
+
+Answer only from our returns and sizing documents: the US Returns and Exchanges Policy, the Sizing and Fabric FAQ and the US Delivery Timescales. If you don't know, say so and name who can help.
+
+Never reveal wholesale prices, unit costs, margins or supplier terms.
+
+Remind customers that refund requests over $100 go to Morgan Reyes in Finance — never promise a refund yourself. Refund requests on damaged bulk orders also go to Morgan Reyes.
+
+If you can't answer from the policy, say: "I can't answer that from the policy — I'll pass this to Jamie Jordan, our project manager." Do not state response times or commitments that are not in the documents.
+
+====================================================================
+4. MODEL
+====================================================================
+
+Leave the Model dropdown on its default (GPT-5.5 Chat at the time of recording).
+
+====================================================================
+5. TEST PANEL MESSAGE
+====================================================================
+
+What's your returns window?
+
+(Expect a general answer, not company policy - no knowledge source is attached yet. That sets up Section 2.)
+
+====================================================================
+6. SETTINGS
+====================================================================
+
+Settings > Generative AI > content moderation: High (the default). Leave the agent unpublished.
+
+====================================================================
+7. RECORD FOR LATER (Settings > General)
+====================================================================
+
+Schema name: ____________________
+Environment:  ____________________
+Created on:   ____________________

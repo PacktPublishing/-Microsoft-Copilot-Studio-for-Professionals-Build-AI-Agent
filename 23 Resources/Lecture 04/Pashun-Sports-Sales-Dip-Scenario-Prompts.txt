@@ -1,0 +1,34 @@
+PASHUN SPORTS T-SHIRTS - HARNESS DEMO PROMPTS (Lecture 04)
+Copy and paste each prompt exactly as shown.
+
+======================================================================
+REQUEST A - COPILOT CHAT HARNESS (agent builder in Microsoft 365 Copilot)
+Suggested describe text - the lecture does not give exact words
+======================================================================
+
+Create an agent called Returns Rules Helper that answers colleagues' questions about where to find and how to apply the Pashun Sports returns rules. Use the US Returns and Exchanges Policy in the Customer Policies library on SharePoint as its only source. Keep answers short and friendly, and say so when the policy does not cover a question.
+
+======================================================================
+ATTEMPT 1 - STANDARD HARNESS (Test panel of the Customer Service Agent)
+======================================================================
+
+Prompt 1:
+Can I swap my Pro Tee for a larger size?
+
+Prompt 2 (the signal that the problem needs more freedom):
+Why did Pro Tee sales dip last month, and what should we do about it?
+
+======================================================================
+REQUEST C / ATTEMPT 2 - GITHUB COPILOT HARNESS (goal, not a flow)
+======================================================================
+
+Goal used in Part 1:
+Find out why Pro Tee sales dipped last month and tell us what to do.
+
+Goal used in Part 2:
+Find out why Pro Tee sales dipped last month and recommend what to do.
+
+Framing request from Paul:
+Pro Tee sales dipped last month — why, and what should we do about it?
+
+Note: stop at the plan the agent proposes. The GitHub Copilot harness uses Copilot Credits from the first build action.

@@ -1,0 +1,57 @@
+{
+  "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+  "type": "AdaptiveCard",
+  "version": "1.4",
+  "body": [
+    {
+      "type": "TextBlock",
+      "text": "Customer needs a human — escalated from the Customer Service Agent",
+      "weight": "Bolder",
+      "size": "Medium",
+      "wrap": true
+    },
+    {
+      "type": "FactSet",
+      "facts": [
+        {
+          "title": "Customer",
+          "value": "@{UserName}"
+        },
+        {
+          "title": "Contact email",
+          "value": "@{ContactEmail}"
+        },
+        {
+          "title": "Original question",
+          "value": "@{OriginalQuestion}"
+        },
+        {
+          "title": "Order number (if captured)",
+          "value": "@{OrderNumber}"
+        },
+        {
+          "title": "Fallback count",
+          "value": "@{FallbackCount}"
+        },
+        {
+          "title": "Conversation ID",
+          "value": "@{ConversationId}"
+        }
+      ]
+    },
+    {
+      "type": "TextBlock",
+      "text": "Owner: Jamie Jordan. The customer was told someone will reply within one working day.",
+      "isSubtle": true,
+      "wrap": true,
+      "spacing": "Medium"
+    }
+  ],
+  "actions": [
+    {
+      "type": "Action.OpenUrl",
+      "title": "Email the customer",
+      "url": "mailto:@{ContactEmail}"
+    }
+  ]
+}

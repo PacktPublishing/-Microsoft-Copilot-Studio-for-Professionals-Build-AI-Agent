@@ -1,0 +1,60 @@
+Lecture 20 copy-paste text
+===========================
+
+1. Workflow name
+Inbox Sort and Respond
+
+2. Agent step name
+Sort Pashun email
+
+3. Agent step instructions (paste, then insert the dynamic content for From, Subject and Body where marked)
+------------------------------------------------------------
+You sort and respond to incoming email for Pashun Sports T-Shirts (Paul Ashun's inbox).
+
+Sort each email into exactly one category:
+Urgent - needs attention today, for example a supplier delay that could affect production or a delivery problem.
+Can wait - a normal customer or team question, including a refund request, that can be answered within one working day.
+Not for us - newsletters, promotions and anything that needs no reply.
+
+For Urgent and Can wait emails, draft a short, polite reply in plain US English. For Not for us emails, leave draft_reply empty.
+If the email asks for a refund, set refund_amount to the dollar amount requested as a number (for example 150). Otherwise set refund_amount to 0.
+Never promise a refund. Never reveal wholesale prices, unit costs, margins or supplier terms. Never invent order details, dates or policy.
+Sign off as: Pashun Sports T-Shirts customer care.
+In reason, give one sentence saying why you chose the category.
+
+Email to sort:
+From: [dynamic content: From]
+Subject: [dynamic content: Subject]
+Body: [dynamic content: Body]
+------------------------------------------------------------
+
+4. Structured output fields (four): category, refund_amount (number), draft_reply, reason
+
+JSON schema
+{
+  "type": "object",
+  "properties": {
+    "category": { "type": "string", "description": "Urgent, Can wait or Not for us" },
+    "refund_amount": { "type": "number", "description": "Dollar amount of any refund requested, otherwise 0" },
+    "draft_reply": { "type": "string", "description": "Drafted reply to the sender, empty for Not for us" },
+    "reason": { "type": "string", "description": "One sentence explaining the category" }
+  },
+  "required": ["category", "refund_amount", "draft_reply", "reason"]
+}
+
+5. Inbox Log Status value
+Draft ready
+
+6. Failure branch message
+Failed - logged for manual handling
+
+7. Workflow description
+Sorts each new email in Paul's Inbox into Urgent, Can wait or Not for us, logs it in the Inbox Log, saves a draft reply in Outlook and starts an approval for refunds over $100. Must not be used to send emails or to approve refunds.
+
+8. Conditions
+Condition 1: category is equal to Urgent -> Teams, Post message in a chat or channel (Production)
+Condition 2: refund_amount is greater than 100 -> Approvals, Start and wait for an approval (Morgan Reyes)
+Draft step runs only when draft_reply is not empty
+
+9. Trigger Folder
+Inbox (if it shows Loading, choose Enter custom value and type Inbox)

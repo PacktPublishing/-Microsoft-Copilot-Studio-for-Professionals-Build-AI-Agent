@@ -1,0 +1,49 @@
+{
+  "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+  "type": "AdaptiveCard",
+  "version": "1.4",
+  "body": [
+    {
+      "type": "TextBlock",
+      "text": "New return request — @{OrderNumber}",
+      "weight": "Bolder",
+      "size": "Medium",
+      "wrap": true
+    },
+    {
+      "type": "FactSet",
+      "facts": [
+        {
+          "title": "Request type",
+          "value": "@{RequestType}"
+        },
+        {
+          "title": "Customer",
+          "value": "@{CustomerName}"
+        },
+        {
+          "title": "Order number",
+          "value": "@{OrderNumber}"
+        },
+        {
+          "title": "Reason",
+          "value": "@{ReturnReason}"
+        }
+      ]
+    },
+    {
+      "type": "TextBlock",
+      "text": "Owner: Jamie Jordan. Reply to the customer within one working day.",
+      "isSubtle": true,
+      "wrap": true,
+      "spacing": "Medium"
+    }
+  ],
+  "actions": [
+    {
+      "type": "Action.OpenUrl",
+      "title": "Open the Returns Log",
+      "url": "https://pashunsports.sharepoint.com/sites/PashunSports/Lists/Returns%20Log"
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+SSML SNIPPET LIBRARY - PASHUN SPORTS (copy and paste)
+
+--- Order reference (digit by digit, with pause)
+Use for: Order reference such as PS-4471, PS-1044
+<speak version="1.0" xmlns="http://www.w3.org/2001/10/synthesis" xml:lang="en-US">
+  Your order <say-as interpret-as="characters">PS</say-as><break time="250ms"/><say-as interpret-as="digits">1044</say-as> is on its way.
+</speak>
+
+--- Digits only (the four-digit entry)
+Use for: Confirming what the caller keyed in
+<speak version="1.0" xmlns="http://www.w3.org/2001/10/synthesis" xml:lang="en-US">
+  I heard <say-as interpret-as="digits">1 0 4 4</say-as>. Is that right?
+</speak>
+
+--- Date
+Use for: Dispatch date, delivery date. Month, day, year
+<speak version="1.0" xmlns="http://www.w3.org/2001/10/synthesis" xml:lang="en-US">
+  It was dispatched on <say-as interpret-as="date" format="mdy">11/12/2026</say-as>.
+</speak>
+
+--- Date with spoken day name
+Use for: Volt Green delivery date
+<speak version="1.0" xmlns="http://www.w3.org/2001/10/synthesis" xml:lang="en-US">
+  The Volt Green fabric is due on <say-as interpret-as="date" format="mdy">11/24/2026</say-as>.
+</speak>
+
+--- Email address
+Use for: care@pashunsports.example
+<speak version="1.0" xmlns="http://www.w3.org/2001/10/synthesis" xml:lang="en-US">
+  You can email us at <sub alias="care at pashun sports dot example">care@pashunsports.example</sub>.
+</speak>
+
+--- Phone number
+Use for: 404-555-0142 (Ridgeline sample line)
+<speak version="1.0" xmlns="http://www.w3.org/2001/10/synthesis" xml:lang="en-US">
+  The number is <say-as interpret-as="telephone">404-555-0142</say-as>.
+</speak>
+
+--- Dollar amount
+Use for: Price, refund threshold
+<speak version="1.0" xmlns="http://www.w3.org/2001/10/synthesis" xml:lang="en-US">
+  Standard delivery is <say-as interpret-as="currency">$5.95</say-as>, and free on orders over <say-as interpret-as="currency">$75</say-as>.
+</speak>
+
+--- Return reference
+Use for: Returns Log reference RET-0001
+<speak version="1.0" xmlns="http://www.w3.org/2001/10/synthesis" xml:lang="en-US">
+  Your return reference is <say-as interpret-as="characters">RET</say-as><break time="250ms"/><say-as interpret-as="digits">0001</say-as>.
+</speak>
+
+--- Pause and emphasis
+Use for: Slow down on the important fact
+<speak version="1.0" xmlns="http://www.w3.org/2001/10/synthesis" xml:lang="en-US">
+  You have <emphasis level="moderate">30 days</emphasis> from delivery.<break time="400ms"/>Is there anything else I can help you with?
+</speak>
+
+--- Brand name pronunciation
+Use for: If the voice mispronounces Pashun
+<speak version="1.0" xmlns="http://www.w3.org/2001/10/synthesis" xml:lang="en-US">
+  Welcome to <phoneme alphabet="ipa" ph="ˈpæʃən">Pashun</phoneme> Sports.
+</speak>
